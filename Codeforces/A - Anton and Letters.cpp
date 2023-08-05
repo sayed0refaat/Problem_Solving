@@ -1,21 +1,23 @@
-#include <iostream>
-#include<string>
-#include<cstdlib>
+#include<iostream>
+#include <bits/stdc++.h>
 #include<algorithm>
-#include<set>
+#define sayed ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 using namespace std;
+ 
+ 
 int main()
+{
+    sayed
+string str;
+//cin>>str;
+getline(cin,str);
+set<char> s;
+for(int i=0;i<str.size();i++){
+    if(str[i]!='{' &&str[i]!='}'&&str[i]!=','&&str[i]!=' '){s.insert(str[i]);}
  
- 
-{ string s,k;
-getline(cin,s);
-set<char> l;
-//cin>>s;
-//cout<<s.length()<<endl;
-for(int i=0; i<s.length(); i++){
-    if(isalpha(s[i])){k+=s[i];
-     l.insert(s[i]);}
 }
-cout<<l.size()<<endl;
-//cout<<k<<endl;
+//cout<<str.size()<<endl;
+cout<<s.size()<<endl;
+ 
+return 0;
 }
