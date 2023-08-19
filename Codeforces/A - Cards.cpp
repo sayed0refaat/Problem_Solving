@@ -10,7 +10,7 @@ int num;
 cin>>num;
 string str;
 cin>>str;
-stack<int>z,e,r,o,n;//stack<int>e;stack<int>r;stack<int>o;stack<int>n;
+stack<int>z,e,r,o,n;
 for(int i=0;i<str.size();i++){
 if(str[i]=='z'){z.push(str[i]);}
 else if(str[i]=='e'){e.push(str[i]);}
